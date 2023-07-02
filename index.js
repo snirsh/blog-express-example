@@ -13,7 +13,7 @@ const options = {
             version: '1.0.0',
         },
     },
-    apis: ['./routes/*.js'], // Path to the API docs
+    apis: ['./swagger/*.js'], // Path to the API docs
 };
 
 const specs = swaggerJsdoc(options);
