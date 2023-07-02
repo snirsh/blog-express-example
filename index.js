@@ -17,7 +17,7 @@ const options = {
 };
 
 const specs = swaggerJsdoc(options);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+app.use('/api', swaggerUi.serve, swaggerUi.setup(specs));
 app.use('/posts', postRoutes);
 
 app.listen(3000, () => console.log('Server running on http://localhost:3000'));
